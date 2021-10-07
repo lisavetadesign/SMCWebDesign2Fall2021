@@ -1,0 +1,52 @@
+@import url(reset.css);
+@import url(colors.css);
+
+/* NAVIGATION */
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+nav li{
+    padding: 10px 20px;
+    border-bottom: 2px solid navy;
+}
+nav li a{
+    text-transform: uppercase;
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+    height: 100px;
+}
+
+
+@media (min-width:768px) {
+    .logo{
+        height: 80px;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav ul{
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    nav ul li{
+        order: 3;
+    }
+    nav ul li:nth-child(3){
+        order: 1;
+    }
+    nav ul li:nth-child(4){
+        order: 2;
+    }
+}
