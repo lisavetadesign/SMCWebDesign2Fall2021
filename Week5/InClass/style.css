@@ -35,6 +35,8 @@
     .grid{
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(3, 200px);
+    }
+    .lg-grid-contained{
         max-width: 1056px;
         margin: auto; 
     }
