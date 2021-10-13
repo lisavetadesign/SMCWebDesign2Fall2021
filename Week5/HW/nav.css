@@ -1,6 +1,10 @@
 .menu-icon{
     width: 60px;
     float: right;
+    padding: 6px;
+    font-family: santino;
+    font-weight: 600;
+    font-size: 2em;
 }
 
 nav ul.nav-links{
@@ -8,6 +12,11 @@ nav ul.nav-links{
     list-style: none;
     margin: 0;
     display: none;
+    /*font-family: santino;*/
+    font-family: regulator-nova, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    background-color: whitesmoke;
 }
 
 #menucheck:checked + .nav-links {
@@ -15,7 +24,6 @@ nav ul.nav-links{
     padding-top: 20px;
     padding-left: 10px;
     position: absolute;
-    background-color:rgb(227,218,227);
     width: 80vw;
     margin: 0px;
     height: 100vh;
@@ -23,4 +31,30 @@ nav ul.nav-links{
 
 #menucheck{
     display: none;
+}
+
+.nav-logo{
+    max-width: 100px;
+    padding: 6px;
+}
+
+@media (min-width:768px){
+    .nav-logo{
+        max-width: 120px;
+        padding: 12px;
+    }
+    .menu-icon{
+        display: none;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav ul.nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
 }
