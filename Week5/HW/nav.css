@@ -1,5 +1,5 @@
 .menu-icon{
-    width: 60px;
+    width: 40px;
     float: right;
     padding: 6px;
     font-family: santino;
@@ -56,5 +56,9 @@ nav ul.nav-links{
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
+    }
+    .flex-contained{
+        max-width: 960px;
+        margin: auto;
     }
 }
