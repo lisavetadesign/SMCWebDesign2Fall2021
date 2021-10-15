@@ -8,7 +8,7 @@
 }
 .empty-space{
     height: 36px;
-    grid-column: 1/span 6;
+    grid-row: auto/span 1;
 }
 .sm-hero-img{
     height: 252px;
@@ -21,32 +21,120 @@
 .sm-menu-img{
     height: 108px;
     grid-column: 2/span 2;
-    grid-row: inherit;
 }
 
 .sm-menu-text{
     height: 108px;
     grid-column: 4/span 3;
-    grid-row: inherit;
 }
-.headline{
+
+.sm-headline{
     font-family: santino;
-    grid-column: 2/span 3;
+    font-weight: 600;
+    font-size: 2em;
+    grid-column: 2/span 4;
     grid-row: 5/span 1;
 }
+.disp-none{
+    display: none;
+}
 
 
-@media(min-width: 768px){
+@media(min-width: 672px){
     .grid{
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(12, auto);
-        gap: 16px;
+        gap: 18px;
         background-image: url("test3-01.jpg");
         background-size: 100%;
     }  
 
-    .md-col-span-1{
-        grid-column-end: span 2;
+    .md-hero-img{
+        height: 378px;
+        grid-column: 2/span 5;
     }
+    .md-hours{
+        height: 198px;
+        grid-column: 1/ span 4;
+    }
+
+    .md-menu-img-r{
+        height: 216px;
+        grid-column: 2/span 2;
+    }
+    .md-menu-text-r{
+        height: 108px;
+        grid-column: 2/span 2;
+    }
+    .md-menu-img-l{
+        height: 216px;
+        grid-column: 4/span 2;
+        grid-row: initial;
+    }
+    .md-menu-text-l{
+        height: 108px;
+        grid-column: 4/span 2;
+        grid-row: initial;
+    }
+    .md-disp-initial{
+        display: initial;
+    }
+    .md-headline{
+        font-family: santino;
+        font-weight: 700;
+        font-size: 3em;
+        grid-column: 2/span 4;
+        grid-row: 4/span 1;
+    }
+}
+
+@media(min-width: 960px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        gap: 24px;
+        background-image: url("test3-01.jpg");
+        background-size: 100%;
+        max-width: 1024px;
+        margin: auto;
+    } 
+
+    .lg-hero-img{
+        height: 504px;
+        grid-column: 4/span 9;
+    }
+
+    .lg-hours{
+        height: 264px;
+        grid-column: 1/ span 6;
+    }
+
+    .lg-menu-img{
+        height: 324px;
+        grid-column: span 3;
+        grid-row: 6/ span 1;
+    }
+    
+    .lg-menu-text{
+        height: 132px;
+        grid-column: span 3;
+        grid-row: 7/ span 1;
+    }
+    .lg-empty-space{
+        height: 48px;
+    }
+    .lg-headline{
+        font-family: santino;
+        font-weight: 800;
+        font-size: 4em;
+        grid-column: 3/span 4;
+        grid-row: 5/span 1;
+    }
+
+
+
+    
+
 }
