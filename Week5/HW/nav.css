@@ -1,22 +1,38 @@
-.menu-icon{
-    width: 40px;
-    float: right;
+.nav-logo{
+    max-width: 100px;
     padding: 6px;
-    font-family: santino;
+}
+.menu-icon{
+    float:right;
+    width: 40px;
+    padding: 6px;
     font-weight: 600;
     font-size: 2em;
 }
 
 nav ul.nav-links{
-    float: right;
     list-style: none;
     margin: 0;
     display: none;
-    /*font-family: santino;*/
     font-family: regulator-nova, sans-serif;
     font-weight: 100;
     font-size: 2em;
-    background-color: whitesmoke;
+    background-color: white;
+}
+a:link{
+    text-decoration: none;
+    color: rgb(33,67,140);
+    font-family: regulator-nova, sans-serif;
+    font-size: 60pt;
+    font-weight: 200;
+    padding-left: 20px;    
+}
+
+a:visited{
+    color:rgb(33,67,140);
+    font-family: regulator-nova, sans-serif;
+    font-size: 60pt;
+    font-weight: 200;
 }
 
 #menucheck:checked + .nav-links {
@@ -33,17 +49,17 @@ nav ul.nav-links{
     display: none;
 }
 
-.nav-logo{
-    max-width: 100px;
-    padding: 6px;
-}
-
 @media (min-width:768px){
+    .flex-contained{
+        display: flex;
+    }
     .nav-logo{
+        display: flex;
         max-width: 120px;
         padding: 12px;
     }
     .menu-icon{
+        display: flex;
         display: none;
     }
     nav{
@@ -56,6 +72,25 @@ nav ul.nav-links{
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
+        background-color: white;
+        padding-right: 12px;
+        padding-bottom: 24px;
+    }
+    a:link{
+        text-decoration: none;
+        color: rgb(33,67,140);
+        font-family: regulator-nova, sans-serif;
+        font-size: 24pt;
+        font-weight: 200;
+        padding-left: 20px;
+        
+    }
+    
+    a:visited{
+        color:rgb(33,67,140);
+        font-family: regulator-nova, sans-serif;
+        font-size: 24pt;
+        font-weight: 200;
     }
     .flex-contained{
         max-width: 960px;
