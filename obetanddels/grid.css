@@ -1,0 +1,273 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, auto);
+    gap: 12px;
+    background-image: url("test3-01.jpg");
+    background-size: 100%;
+}
+.sm-empty-space{
+    height: 36px;
+    grid-column: 1/span 6;
+}
+.sm-hero-img{
+    height: 252px;
+    grid-column: 2/span 5;
+    margin-top: 6px;
+}
+.sm-hours{
+    height: 132px;
+    grid-column: 1/ span 4;
+}
+.sm-health{
+    height: 132px;
+    grid-column: 3/span 4;
+}
+.sm-menu-img{
+    height: 108px;
+    grid-column: 2/span 2;
+}
+
+.sm-menu-text{
+    height: 108px;
+    grid-column: 4/span 3;
+}
+
+.sm-headline{
+    font-family: santino;
+    font-weight: 600;
+    font-size: 2em;
+    grid-column: 2/span 4;
+}
+
+.sm-coffee-brand-1{
+    height:108px;
+    grid-column: 1/span 2;
+    grid-row: 16/span 1;
+}
+.sm-coffee-brand-2{
+    height:108px;
+    grid-column: 3/span 2;
+    grid-row: 16/span 1;
+}
+.sm-coffee-brand-3{
+    height:108px;
+    grid-column: 5/span 2;
+    grid-row: 16/span 1;
+}
+.sm-obet-img{
+    height: 252px;
+    grid-column: 2/span 3;
+    grid-row: 7/span 1;
+}
+.sm-obet-txt{
+    height: 108px;
+    grid-column: 4/span 3;
+    grid-row: 7/span 1;
+    align-self: center;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 12px;
+    max-width: 1024px;
+}
+
+.grid-item-footer{
+    height:264px;
+    grid-column: 1/span 6;
+}
+
+@media(min-width: 672px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(12, auto);
+        gap: 18px;
+        background-image: url("test3-01.jpg");
+        background-size: 100%;
+    }  
+
+    .md-empty-space{
+        height: 42px;
+        grid-column: 1/span 6;
+    }
+
+    .md-hero-img{
+        height: 378px;
+        grid-column: 2/span 5;
+        padding-top: 12px;
+    }
+    .md-hours{
+        height: 198px;
+        grid-column: 1/ span 4;
+    }
+
+    .md-health{
+        height: 198px;
+        grid-column: 3/span 4;
+    }
+    .md-menu-img-1{
+        height: 216px;
+        grid-column: 2/span 2;
+        grid-row: 10/span 1;  
+    }
+    .md-menu-text-1{
+        height: 108px;
+        grid-column: 2/span 2;
+        grid-row: 11/span 1;
+    }
+    .md-menu-img-2{
+        height: 216px;
+        grid-column: 4/span 2;
+        grid-row: 10/span 1;
+    }
+    .md-menu-text-2{
+        height: 108px;
+        grid-column: 4/span 2;
+        grid-row: 11/span 1;
+    }
+    .md-menu-img-3{
+        height: 216px;
+        grid-column: 2/span 2;
+        grid-row: 12/span 1;
+    }
+    .md-menu-text-3{
+        height: 108px;
+        grid-column: 2/span 2;
+        grid-row: 13/span 1;
+    }
+    .md-menu-img-4{
+        height: 216px;
+        grid-column: 4/span 2;
+        grid-row: 12/span 1;
+    }
+    .md-menu-text-4{
+        height: 108px;
+        grid-column: 4/span 2;
+        grid-row: 13/span 1;
+    }
+    .md-headline{
+        font-family: santino;
+        font-weight: 700;
+        font-size: 3em;
+        grid-column: 2/span 4;
+    }
+    .md-coffee-brand-1{
+        height:132px;
+        grid-column: 1/span 2;
+        grid-row: 16/span 1;
+    }
+    .md-coffee-brand-2{
+        height:132px;
+        grid-column: 3/span 2;
+        grid-row: 16/span 1;
+    }
+    .md-coffee-brand-3{
+        height:132px;
+        grid-column: 5/span 2;
+        grid-row: 16/span 1;
+    }
+    .md-obet-img{
+        height: 378px;
+        grid-column: 2/span 3;
+        grid-row: 7/span 1;
+    }
+    .md-obet-txt{
+        height: 120px;
+        grid-column: 4/span 3;
+        grid-row: 7/span 1;
+        align-self: center;
+    }
+}
+
+@media(min-width: 960px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        gap: 24px;
+        background-image: url("test3-01.jpg");
+        background-size: 100%;
+        max-width: 1024px;
+        margin: auto;
+    } 
+    .lg-empty-space{
+        height: 48px;
+        grid-column: 1/span 6;
+    }
+
+    .lg-hero-img{
+        height: 504px;
+        grid-column: 4/span 9;
+        padding-top: 18px;
+    }
+
+    .lg-hours{
+        height: 264px;
+        grid-column: 1/ span 6;
+    }
+
+    .lg-health{
+        height: 264px;
+        grid-column: 7/span 6;
+    }
+
+    .lg-menu-img{
+        height: 324px;
+        grid-column: span 3;
+        grid-row: 9/ span 1;
+    }
+    
+    .lg-menu-text{
+        height: 132px;
+        grid-column: span 3;
+        grid-row: 10/ span 1;
+    }
+    .lg-headline{
+        font-family: santino;
+        font-weight: 800;
+        font-size: 4em;
+        grid-column: 3/span 4;
+    }
+    .lg-obet-img{
+        height: 504px;
+        grid-column: 3/span 4;
+        grid-row: 6/span 1;
+    }
+    .lg-obet-txt{
+        height: 132px;
+        grid-column: 6/span 4;
+        grid-row: 6/span 1;
+        align-self: center;
+    }
+    .lg-coffee-brand-1{
+        height:156px;
+        grid-column: 3/span 3;
+        grid-row: 13/span 1;
+    }
+    .lg-coffee-brand-2{
+        height:156px;
+        grid-column: 6/span 3;
+        grid-row: 13/span 1;
+    }
+    .lg-coffee-brand-3{
+        height:156px;
+        grid-column: 9/span 3;
+        grid-row: 13/span 1;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 12px;
+        max-width: 1024px;
+        margin: auto;
+    }
+    .grid-item-footer{
+        height:264px;
+        grid-column: 1/span 12;
+    }
+
+}
