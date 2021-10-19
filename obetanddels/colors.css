@@ -10,6 +10,9 @@
 .bg-navy{
     background-color: rgb(33,67,140);
 }
+.bg-navy-alpha{
+    background-color: rgba(33, 67, 140, 0.5);
+}
 
 .obet-yellow{
     color: rgb(229,183,62);

@@ -20,7 +20,7 @@
     grid-column: 1/ span 4;
 }
 .sm-health{
-    height: 132px;
+    height: 156px;
     grid-column: 3/span 4;
 }
 .sm-menu-img{
@@ -34,9 +34,6 @@
 }
 
 .sm-headline{
-    font-family: santino;
-    font-weight: 600;
-    font-size: 2em;
     grid-column: 2/span 4;
 }
 
@@ -58,6 +55,7 @@
 .sm-obet-img{
     height: 252px;
     grid-column: 2/span 3;
+
     grid-row: 7/span 1;
 }
 .sm-obet-txt{
@@ -69,14 +67,25 @@
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
     gap: 12px;
-    max-width: 1024px;
 }
 
-.grid-item-footer{
-    height:264px;
-    grid-column: 1/span 6;
+.sm-desc{
+    height: 96px;
+    grid-column: 2/span 4;
+}
+.sm-address{
+    height: 48px;
+    grid-column: 2/span 4;
+}
+.socials{
+    grid-column: 2/span 5;
+}
+.insta{
+    height: 48px;
+    max-width: 40px;
+    grid-column: 3/span 1;   
 }
 
 @media(min-width: 672px){
@@ -149,18 +158,15 @@
         grid-row: 13/span 1;
     }
     .md-headline{
-        font-family: santino;
-        font-weight: 700;
-        font-size: 3em;
         grid-column: 2/span 4;
     }
     .md-coffee-brand-1{
-        height:132px;
+        height:156px;
         grid-column: 1/span 2;
         grid-row: 16/span 1;
     }
     .md-coffee-brand-2{
-        height:132px;
+        height:156px;
         grid-column: 3/span 2;
         grid-row: 16/span 1;
     }
@@ -179,6 +185,12 @@
         grid-column: 4/span 3;
         grid-row: 7/span 1;
         align-self: center;
+    }
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 12px;
     }
 }
 
@@ -226,9 +238,6 @@
         grid-row: 10/ span 1;
     }
     .lg-headline{
-        font-family: santino;
-        font-weight: 800;
-        font-size: 4em;
         grid-column: 3/span 4;
     }
     .lg-obet-img{
@@ -260,14 +269,17 @@
     .footer-grid{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
         gap: 12px;
         max-width: 1024px;
         margin: auto;
     }
-    .grid-item-footer{
+    .lg-desc{
         height:264px;
-        grid-column: 1/span 12;
+        grid-column: 3/span 5;
     }
-
+    .lg-address{
+        height: 48px;
+        grid-column: 9/span 3;
+    }
 }

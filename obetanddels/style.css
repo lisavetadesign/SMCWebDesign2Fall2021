@@ -1,14 +1,10 @@
-.fic{
-    max-width: 100%;
-    height:auto;
-    object-fit: contain;
-}
 .sm-dots {
     width: 80%;
     border-bottom: 3px dotted rgb(24, 22, 22);
     grid-column: 4/ span 1;
     align-self: center;
 }
+
 @media(min-width: 672px){
 .md-dots {
     width: 80%;

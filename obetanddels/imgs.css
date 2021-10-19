@@ -1,0 +1,70 @@
+.od-hero-img{
+    background-image: url("obet_dels_hero_img.jpg");
+    background-size: 130%;
+}
+.obet-img{
+    background-image: url("obet_img.jpg");
+    background-size: 150%;
+}
+.woodcat-img{
+    background-image: url("woodcat_coffee-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 12px;
+}
+.patria-img{
+    background-image: url("patria_coffee-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 12px;
+}
+.houseroots-img{
+    background-image: url("houseroots_coffee-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 12px;
+}
+.josh-img{
+    background-image: url("josh.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.heather-img{
+    background-image: url("heather.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+.fic{
+    background-image: url("FillipinoIcedcoffee.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.tino{
+    background-image: url("3in1coffee.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.ttl{
+    background-image: url("ThaiTeaLatte.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.mp{
+    background-image: url("MatchaPalmer.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.hours-bg{
+    background-image: url("back-test-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.safety-bg{
+    background-image: url("back-test-02-01-01.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
