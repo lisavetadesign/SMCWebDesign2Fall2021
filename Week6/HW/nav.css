@@ -1,0 +1,99 @@
+.nav-logo{
+    max-width: 100px;
+    padding: 6px;
+}
+.menu-icon{
+    float:right;
+    width: 40px;
+    padding: 6px;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+nav ul.nav-links{
+    list-style: none;
+    margin: 0;
+    display: none;
+    font-family: regulator-nova, sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    background-color: white;
+}
+a:link{
+    text-decoration: none;
+    color: rgb(33,67,140);
+    font-family: regulator-nova, sans-serif;
+    font-size: 60pt;
+    font-weight: 200;
+    padding-left: 20px;    
+}
+
+a:visited{
+    color:rgb(33,67,140);
+    font-family: regulator-nova, sans-serif;
+    font-size: 60pt;
+    font-weight: 200;
+}
+
+#menucheck:checked + .nav-links {
+    display: block;
+    padding-top: 20px;
+    padding-left: 10px;
+    position: absolute;
+    width: 80vw;
+    margin: 0px;
+    height: 100vh;
+}
+
+#menucheck{
+    display: none;
+}
+
+@media (min-width:768px){
+    .flex-contained{
+        display: flex;
+    }
+    .nav-logo{
+        display: flex;
+        max-width: 120px;
+        padding: 12px;
+    }
+    .menu-icon{
+        display: flex;
+        display: none;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav ul.nav-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: white;
+        padding-right: 12px;
+        padding-bottom: 24px;
+    }
+    a:link{
+        text-decoration: none;
+        color: rgb(33,67,140);
+        font-family: regulator-nova, sans-serif;
+        font-size: 24pt;
+        font-weight: 200;
+        padding-left: 20px;
+        
+    }
+    
+    a:visited{
+        color:rgb(33,67,140);
+        font-family: regulator-nova, sans-serif;
+        font-size: 24pt;
+        font-weight: 200;
+    }
+    .flex-contained{
+        max-width: 960px;
+        margin: auto;
+    }
+}
