@@ -79,6 +79,11 @@
     height: 48px;
     grid-column: 2/span 4;
 }
+
+.sm-hrs{
+    height: 72px;
+    grid-column: 2/span 4;
+}
 .socials{
     grid-column: 2/span 5;
 }
@@ -281,5 +286,9 @@
     .lg-address{
         height: 48px;
         grid-column: 9/span 3;
+    }
+    .lg-hrs{
+        height: 72px;
+        grid-column: 9/span 3; 
     }
 }
