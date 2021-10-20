@@ -1,0 +1,115 @@
+#p{
+    align-content: center;
+}
+.sm-p-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 9pt;
+    padding-right: 6px;
+}
+.sm-h-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 16pt;
+    font-weight: 200;
+}
+.sm-hrs-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 14pt;
+    font-weight: 200;
+    padding-left: 12px;
+    line-height: 1.6;
+}
+.sm-hs-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 10pt;
+    font-weight: 300;
+    padding-left: 12px;
+    line-height: 1.2;
+}
+.sm-hs-headline{
+    font-family: regulator-nova, sans-serif;
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: .8;
+}
+.sm-about-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 64pt;
+    font-weight: 200;
+}
+.sm-about-sub-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 22pt;
+    font-weight: 200;
+}
+
+@media(min-width: 672px){
+.md-p-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 12pt;
+    }
+.md-h-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 22pt;
+    font-weight: 200;
+    }
+.md-hrs-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 22pt;
+    font-weight: 250;
+    padding-left: 18px;
+    line-height: 1.6;
+    }
+.md-hs-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    padding-left: 18px;
+    line-height: 1.2;
+    }
+.md-hs-headline{
+    font-family: regulator-nova, sans-serif;
+    font-size: 22pt;
+    font-weight: 300;
+    line-height: .8;
+    }
+.md-about-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 72pt;
+    font-weight: 200;
+    }
+.md-about-sub-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 26pt;
+    font-weight: 200;
+    }
+}
+
+@media(min-width: 960px){
+.lg-p-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 14pt;
+    }
+.lg-h-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 24pt;
+    font-weight: 200;
+    }
+.lg-hrs-font{
+    font-family: regulator-nova, sans-serif;
+    font-size: 28pt;
+    font-weight: 300;
+    padding-left: 18px;
+    line-height: 1.6;
+    }
+
+.lg-about-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 88pt;
+    font-weight: 200;
+    }
+.lg-about-sub-head{
+    font-family: regulator-nova, sans-serif;
+    font-size: 32pt;
+    font-weight: 200;
+    }
+}

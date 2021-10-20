@@ -1,0 +1,28 @@
+.bg-yellow{
+    background-color: rgb(229,183,62);
+}
+.bg-orange{
+    background-color: rgb(163,93,68);
+}
+.bg-blue{
+    background-color: rgb(71,121,190);
+}
+.bg-navy{
+    background-color: rgb(33,67,140);
+}
+.bg-navy-alpha{
+    background-color: rgba(33, 67, 140, 0.5);
+}
+
+.obet-yellow{
+    color: rgb(229,183,62);
+}
+.dels-orange{
+    color: rgb(163,93,68);
+}
+.obet-blue{
+    color: rgb(71,121,190);
+}
+.dels-navy{
+    color: rgb(33,67,140);
+}
