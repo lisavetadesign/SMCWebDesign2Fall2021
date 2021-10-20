@@ -81,7 +81,7 @@
 }
 
 .sm-hrs{
-    height: 72px;
+    height: 96px;
     grid-column: 2/span 4;
 }
 .socials{
@@ -280,7 +280,7 @@
         margin: auto;
     }
     .lg-desc{
-        height:264px;
+        height: 156px;
         grid-column: 3/span 5;
     }
     .lg-address{
@@ -288,7 +288,7 @@
         grid-column: 9/span 3;
     }
     .lg-hrs{
-        height: 72px;
-        grid-column: 9/span 3; 
+        height: 96px;
+        grid-column: 3/span 3; 
     }
 }
