@@ -6,8 +6,8 @@
     background-image: url("test3-01.jpg");
     background-size: 100%;
 }
-.menu-img{
-    height: 512px;
+.sm-menu-hero-img{
+    height: 180px;
     grid-column: 2/span 5;
 }
 .menu-item{
@@ -30,7 +30,11 @@
         gap: 18px;
         background-image: url("test3-01.jpg");
         background-size: 100%;
-    }  
+    } 
+    .md-menu-hero-img{
+        height: 360px;
+        grid-column: 2/span 5;
+    } 
 }
 @media(min-width: 960px){
     .grid-menu{
@@ -53,5 +57,9 @@
     .lg-menu-price{
         grid-column: 9/span 1;
     }
+    .lg-menu-hero-img{
+        height: 412px;
+        grid-column: 3/span 9;
+    } 
 
 }
