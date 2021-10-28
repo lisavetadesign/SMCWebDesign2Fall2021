@@ -11,15 +11,9 @@
         #mainH {
             font-family: Arial, Helvetica, sans-serif;
             background-color: thistle;
+            color: black;
             padding: 30px;
             max-width: 1020px;
-            text-align: center;
-            margin: auto;
-        }
-
-        #mainP{
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 30px;
             text-align: center;
             margin: auto;
         }
@@ -89,7 +83,7 @@
             grid-row: 2/span 1;
             height: 300px;
             max-width: 1020px;
-            background-color: cornflowerblue;
+            background-color: peachpuff;
             color: black;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 28pt;
@@ -116,9 +110,6 @@
     <h1 id="mainH">
         Push My Buttons
     </h1>
-    <p id="mainP">
-    some buttons need to be pushed twice
-    </p>
     <section class="container">
 
         <button role="button" id="bttn1" onclick="myFunction()"> Click here for a Surprise </button>
@@ -130,10 +121,10 @@
                 How do you cheer up a JavaScript developer?
                 <br>
                 <br>
-                You “Console“ them!
+                You "Console" them!
                 <br>
                 <br>
-                <button role="button" id="surpriseBttn" onclick="myFunction4()"> HaHaHaHa </button>
+                <button role="button" id="surpriseBttn" onclick="myFunction4()"> HaHaHaHaHaHaHaHaHaHa </button>
             </p>
         </div>
 
@@ -144,24 +135,35 @@
         function myFunction() {
             document.getElementById("bttn1").innerText = document.getElementById("bttn1").innerText + ", Meow";
             let x = document.getElementById("dispImg");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
 
         function myFunction2() {
-            mainH.style.backgroundColor = "black";
-            mainH.style.color = "thistle";
+            document.getElementById("mainH")
+            let x = document.getElementById("mainH");
+            let y = document.getElementById("mainH");
+            if (x.style.backgroundColor === "black") {
+                x.style.backgroundColor = "thistle";
+            } else {
+                x.style.backgroundColor = "black";
+            }
+            if (y.style.color === "thistle") {
+                y.style.color = "black";
+            } else {
+                y.style.color = "thistle";
+            }
         }
 
         function myFunction3() {
             let x = document.getElementById("joke");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
+            if (x.style.display === "block") {
                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
             } 
         }
 
