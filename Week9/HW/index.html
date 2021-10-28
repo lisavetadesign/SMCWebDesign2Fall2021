@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Buttons Do Things</title>
+
+    <style>
+        #mainH {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: thistle;
+            padding: 30px;
+            max-width: 1020px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            max-width: 1020px;
+            padding-top: 20px;
+            margin: auto;
+            column-gap: 40px;
+            justify-content: space-around;
+
+        }
+
+        #bttn1 {
+            grid-column: 1/span 1;
+            padding: 10px;
+            background-color: pink;
+            color: plum;
+            border-radius: 12px;
+            height: 90px;
+            border: none;
+            font-size: 16pt;
+            font-weight: 800;
+        }
+
+        #bttn2 {
+            grid-column: 2/span 1;
+            padding: 10px;
+            background-color: black;
+            color: thistle;
+            border-radius: 12px;
+            height: 90px;
+            border: none;
+            font-size: 16pt;
+            font-weight: 600;
+        }
+
+        #bttn3 {
+            grid-column: 3/span 1;
+            padding: 10px;
+            background-color: peachpuff;
+            color: black;
+            border-radius: 12px;
+            height: 90px;
+            border: none;
+            font-size: 16pt;
+            font-weight: 600;
+        }
+
+        #dispImg {
+            display: grid;
+            grid-column: 1/span 3;
+            grid-row: 2/span 1;
+            height: 600px;
+            max-width: 1020px;
+            background-image: url("sphynx_cat.jpg");
+            background-size: 100%;
+            display: none;
+            margin-top: 20px;
+        }
+        #joke{
+            display: grid;
+            grid-column: 1/span 3;
+            grid-row: 2/span 1;
+            height: 300px;
+            max-width: 1020px;
+            background-color: cornflowerblue;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 28pt;
+            font-weight: 200;
+            line-height: 32pt;
+            padding-left: 20px;
+            display: none;
+            margin-top: 20px;
+        }
+        #surpriseBttn{
+            height: 400px;
+            width: 400px;
+            background-image: url("ce_joke_LAUGH.gif");
+            background-size: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 id="mainH">
+        Push My Buttons
+    </h1>
+    <section class="container">
+
+        <button role="button" id="bttn1" onclick="myFunction()"> Click here for a Surprise </button>
+        <div id="dispImg"></div>
+        <button role="button" id="bttn2" onclick="myFunction2()"> Click here for a change! </button>
+        <button role="button" id="bttn3" onclick="myFunction3()"> Click here for a Joke </button>
+        <div id="joke">
+            <p>
+                How do you cheer up a JavaScript developer?
+                <br>
+                <br>
+                You “"Console"" them!
+                <br>
+                <br>
+                <button role="button" id="surpriseBttn" onclick="myFunction4()"> HaHaHaHa </button>
+            </p>
+        </div>
+
+    </section>
+
+    <script>
+
+        function myFunction() {
+            document.getElementById("bttn1").innerText = document.getElementById("bttn1").innerText + ", Meow";
+            let x = document.getElementById("dispImg");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction2() {
+            mainH.style.backgroundColor = "black";
+            mainH.style.color = "thistle";
+        }
+
+        function myFunction3() {
+            let x = document.getElementById("joke");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            } 
+        }
+
+        function myFunction4() {
+            document.getElementById("surpriseBttn");
+            let x = document.getElementById("surpriseBttn");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            } 
+        }
+
+    </script>
+</body>
+
+</html>
