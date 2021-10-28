@@ -17,6 +17,13 @@
             margin: auto;
         }
 
+        #mainP{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 30px;
+            text-align: center;
+            margin: auto;
+        }
+
         .container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -73,8 +80,8 @@
             max-width: 1020px;
             background-image: url("sphynx_cat.jpg");
             background-size: 100%;
-            display: none;
             margin-top: 20px;
+            display: none;
         }
         #joke{
             display: grid;
@@ -93,10 +100,13 @@
             margin-top: 20px;
         }
         #surpriseBttn{
-            height: 400px;
-            width: 400px;
+            height: 250px;
+            width: 250px;
             background-image: url("ce_joke_LAUGH.gif");
             background-size: 100%;
+            border-radius: 12px;
+            border-color: crimson;
+            border-width: 4px;
         }
 
     </style>
@@ -106,6 +116,9 @@
     <h1 id="mainH">
         Push My Buttons
     </h1>
+    <p id="mainP">
+    some buttons need to be pushed twice
+    </p>
     <section class="container">
 
         <button role="button" id="bttn1" onclick="myFunction()"> Click here for a Surprise </button>
@@ -117,7 +130,7 @@
                 How do you cheer up a JavaScript developer?
                 <br>
                 <br>
-                You “"Console"" them!
+                You “Console“ them!
                 <br>
                 <br>
                 <button role="button" id="surpriseBttn" onclick="myFunction4()"> HaHaHaHa </button>
