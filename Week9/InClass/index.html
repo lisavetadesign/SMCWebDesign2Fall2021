@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JavaScript</title>
+
+    <style>
+        #mainH{
+            background-color: dodgerblue;
+            color:ghostwhite;
+            padding: 20px;
+        }
+
+        #tealPane{
+            background-color: teal;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="mainH">Intro to JavaScript</h1>
+
+    <section>
+        <button role="button" id="button1"> Click Me! </button>
+        <div id="tealPane"></div>
+    </section>
+
+
+    <!-- Prevent Java Script from overloading the conntent by placing it at the end of the body -->
+    <script>
+        console.info("This is an example of a JavaScript command");
+        //alert("welcome to the page!");//
+        //let answer = confirm("Would you like to continue?");//
+        let answer = prompt("What is your name?", "");
+
+        let mainHeader = document.getElementById("mainH");
+        let b1 = document.getElementById("button1");
+        let pane = document.getElementById("tealPane");
+
+        let modifyPane = function (){
+            pane.style.backgroundColor = "rgb(10, 100, 180)";
+            let notification = document.createElement("h5");
+            notification.innerText = "This has been modified!";
+            pane.appendChild(notification);
+        }
+
+        console.log(mainHeader);
+        console.log(answer);
+
+        mainHeader.style.backgroundColor = "pink";
+        mainHeader.innerText = mainHeader.innerText + "! Welcome, " + answer;
+
+        //function is a collection of actions//
+        b1.addEventListener("click", modifyPane);
+
+    </script>
+</body>
+</html>
