@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+    <style>
+        .presentation{
+            height: 300px;
+            margin-top: 40px;
+        }
+
+        #imageShowcase{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .buttonStyle{
+            margin-top: 12px;
+            padding: 16px;
+            background-color: white;
+            color: black;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="presentation" id="randomColorGen"></div>
+            <button id="colorButton" class="buttonStyle"> Change the color </button>
+        </section>
+        <section>
+            <div class="presentation">
+                <img src="quokka1.jpg" alt="first quokka image" id="toggleImage">
+            </div>
+            <button id="imageToggle" class="buttonStyle"> Show the other one </button>
+        </section>
+        <section>
+            <div class="presentation" id="imageShowcase">
+
+            </div>
+            <button id="imgOne" class="buttonStyle"> Yosemite National Park </button>
+            <button id="imgTwo" class="buttonStyle"> Sequia National Park </button>
+            <button id="imgThree" class="buttonStyle"> Denali National Park </button>
+            <button id="imgFour" class="buttonStyle"> Arches National Park </button>
+    </main>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
