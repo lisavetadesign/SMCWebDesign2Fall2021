@@ -4,58 +4,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Change an image source and select options</title>
 
     <style>
-    .nav-logo{
-    width: 80px;
-}
 
-    .menu-icon{
-    width: 60px;
-    float: right;
+     :root{
+        --warmearth: rgb(252, 202, 133);
+    } /*LOOK THIS UP*/
+    
+    body{
+    margin: 0px;
 }
-
-    nav ul.nav-links{
+    img{
+    max-width: 100%;
+}
+    ul{
     list-style: none;
-    margin: 0;
-    display: none;
-}
-    #menucheck:checked + .nav-links {
-    display: block;
-    float: right;
-    padding-top: 20px;
-    padding-right: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
-    #menucheck{
-    display: none;
+.nav-container{
+    width:100%;
+    background-color: var(--warmearth);
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 0.25fr auto 2fr;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+#navbarLogo{
+    justify-self: start;
+    margin-left: 20px;
+    max-height: 100px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.nav-links{
+    color: rgb(4, 26, 4);
+    text-decoration: none;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+}
+.menu-toggle .bar{
+    height: 3px;
+    width: 30px;
+    margin: 8px auto;
+    border-radius: 8px;
+    background-color: rgb(4, 26, 4);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+    margin: auto;
+    height:600px;
+    max-width: 1020px;
+}
+.button-container{
+    display: flex;
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
+    place-items: center;
+    justify-content: space-evenly;  
+}
+
+.btn1{
+    background-image: url("GreatSmokyMountainsNP.jpg");
+}
+.btn2{
+    background-image: url("YellowstoneNP.jpg");
+}
+.btn3{
+    background-image: url("ZionNP.jpeg");
+}
+.btn4{
+    background-image: url("RockyMountainNP.jpg");
+}
+.btn5{
+    background-image: url("GrandTetonNP.jpg");
+}
+
+.presentationArea{
+    grid-column: 2/ span 1;
+    grid-row: 2/ span 2; 
+}
+
+#imageShowcase{
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+
+.buttonStyle{
+    height: 80px;
+    width: 120px;
+    background-size: 110%;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media(max-width: 1020px){
+    .nav-container{
+        position: relative;
+        margin: auto;
+    }
+
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        background-color:var(--warmearth);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background-color: var(--warmearth);
+        right: 0%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links{
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+
+    .menu-toggle .bar{
+        display: block;
+        width: 40px;
+        height: 5px;
+        color:rgb(4, 26, 4);
+    }
+
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobileMenu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+
+    #mobileMenu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobileMenu.is-active .bar:nth-child(1){
+        transform: translateY(13px) rotate(45deg);
+    }
+
+    #mobileMenu.is-active .bar:nth-child(3){
+        transform: translateY(-13px) rotate(-45deg);
+    }
 }
 
     </style>
 </head>
 <body>
     <header>
-        <nav>
-        <a href="">
-            <img src="" alt="logo" class="nav-logo">
-            <link href="index.html">
-        </a>
-
-        <label for="menucheck" >
-            <img src="menuIcon01.png" alt="hamberger menu" class="menu-icon" id="iconImg">
-        </label>
-
-        <input type="checkbox" id="menucheck">
-        <ul class="nav-links">
-            <li><a href="#">National Park 1</a></li>
-            <li><a href="#">National Park 2</a></li>
-            <li><a href="#">National Park 3</a></li>
-        </ul>
-        </nav>
+        <div class="nav-container">
+            <nav class="navbar">
+                <img src="NPSlogo.png" alt="nav logo" id="navbarLogo">
+                <div class="menu-toggle" id="mobileMenu">
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-links">Great Smoky Mountains</a></li>
+                    <li><a href="#" class="nav-links">Yellowstone</a></li>
+                    <li><a href="#" class="nav-links">Zion</a></li>
+                    <li><a href="#" class="nav-links">Rocky Mountain</a></li>
+                    <li><a href="#" class="nav-links">Grand Teton</a></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
     <main>
-
+        <div class="grid-container">
+        <div class="button-container">
+        <button class="btn1 buttonStyle" id="imgOne"></button>
+        <button class="btn2 buttonStyle" id="imgTwo"></button>
+        <button class="btn3 buttonStyle" id="imgThree"></button>
+        <button class="btn4 buttonStyle" id="imgFour"></button>
+        <button class="btn5 buttonStyle" id="imgFive"></button>
+        </div>
+        <div class="presentationArea" id="imageShowcase">
+        </div>
+        </div>
     </main>
     <script src="script.js">
 
