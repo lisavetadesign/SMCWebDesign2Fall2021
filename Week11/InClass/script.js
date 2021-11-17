@@ -6,11 +6,11 @@ let carouselIMG = document.getElementById("carouselIMG");
 //for the select
 let groupSelect = document.getElementById("groupSelect");
 let categorySelect = document.getElementById("categorySelect");
-let charactersOptions = ['Classic', 'Alice in Wonderland', 'Monsters Inc', 'Starwars'];
-let parksOptions = ['Disneyland', 'Disneyworld', 'TokyoDisney'];
-let moviesOptions = ['Marvel', 'Pixar', 'Princess'];
+let characterOptions = ['Classic', 'Alice in Wonderland', 'Monsters Inc', 'Starwars'];
+let parkOptions = ['Disneyland', 'Disneyworld', 'TokyoDisney'];
+let movieOptions = ['Marvel', 'Pixar', 'Princess'];
 
-let changeSlide= function(){
+let changeSlide = function(){
     if (currentIndex === 0){
         carouselIMG.src = carouselImages[1];
         currentIndex = 1;
@@ -29,24 +29,24 @@ let changeSlide= function(){
     }
 }
 let updateCategory = function(){
+    console.log(groupSelect);
     categorySelect.innerHTML = '';
     let selectedValue = groupSelect.value;
     if (selectedValue === "characters"){
-        charactersOptions.forEach(function(elem){
+        characterOptions.forEach(function(elem){
             categorySelect.innerHTML += '<option value="' + elem + '">' + elem + '</option>';
         });
     }
     else if (selectedValue === "parks"){
-        parksOptions.forEach(function(elem){
+        parkOptions.forEach(function(elem){
             categorySelect.innerHTML += '<option value="' + elem + '">' + elem + '</option>';
         });
     }
     else if (selectedValue === "movies"){
-        moviesOptions.forEach(function(elem){
+        movieOptions.forEach(function(elem){
             categorySelect.innerHTML += '<option value="' + elem + '">' + elem + '</option>';
         });
     }
-
 
 }
 
@@ -61,3 +61,4 @@ window.addEventListener("load", function(){
 })
 
 window.addEventListener("change", updateCategory);
+window.addEventListener("change", updateSelection);
