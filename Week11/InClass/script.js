@@ -1,5 +1,8 @@
 //for the carousel
-let carouselImages = ["AliceAIW.jpg", "CaterpillarAIW.jpg", "CheshireCatAIW.jpg", "MadHatterAIW.jpg"];
+let aliceImages = ["AliceAIW.jpg", "CaterpillarAIW.jpg", "CheshireCatAIW.jpg", "MadHatterAIW.jpg"];
+let parkImages = ["GrandTetonNP.jpg","GreatSmokyMountainsNP.jpg","GrandTetonNP.jpg","GreatSmokyMountainsNP.jpg"]
+let classicImages = ["", "", "", ""];
+let carouselImages = ["", "", "", ""];
 let currentIndex = 0;
 let carouselIMG = document.getElementById("carouselIMG");
 
@@ -50,6 +53,22 @@ let updateCategory = function(){
 
 }
 
+let characterUpdate = function (){
+    let currentValue = categorySelect.value;
+    console.log(currentValue);
+    if (currentValue === 'Alice in Wonderland'){
+        carouselImages = aliceImages;
+    }
+
+    else if (currentValue === 'Monsters Inc'){
+        carouselImages = parkImages;
+    }
+    else 
+        {currentValue === 'Disneyworld'
+        carouselImages = parkImages;
+    }
+}
+
 window.addEventListener("load", function(){
     //triggered once after 5 sec
    setTimeout(function(){
@@ -60,5 +79,7 @@ window.addEventListener("load", function(){
    setInterval(changeSlide, 5000);
 })
 
-window.addEventListener("change", updateCategory);
-window.addEventListener("change", updateSelection);
+groupSelect.addEventListener("change", updateCategory);
+categorySelect.addEventListener("change", characterUpdate);
+categorySelect.addEventListener("change", carouselUpdate);
+

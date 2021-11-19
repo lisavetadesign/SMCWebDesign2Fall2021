@@ -3,3 +3,10 @@
     font-size: 14pt;
     text-transform: uppercase;
 }
+
+.carouselStyle{
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    
+}
