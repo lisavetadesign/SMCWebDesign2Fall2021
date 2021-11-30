@@ -61,7 +61,6 @@ let updateCategory = function(){
 }
 
 let movieUpdate = function (){
-    console.log(carouselImages);
     let currentValue = movieSelect.value;
     if (currentValue === 'An American Pickle'){
         carouselImages = americanpickleImages;
@@ -94,53 +93,8 @@ let movieUpdate = function (){
         {currentValue === ''
         carouselImages = carouselImages;
     }
-}
-
-/*let comedyUpdate = function (){
     console.log(carouselImages);
-    let currentValue = movieSelect.value;
-    if (currentValue === 'An American Pickle'){
-        carouselImages = americanpickleImages;
-    }
-
-    else if (currentValue === 'Dinner for Schmucks'){
-        carouselImages = dinnerschmucksImages;
-    }
-    else 
-        {currentValue === 'Late Night'
-        carouselImages = latenightImages;
-    }
 }
-
-let dramaUpdate = function (){
-    let currentValue = movieSelect.value;
-    if (currentValue === 'Blue Bayou'){
-        carouselImages = bluebayouImages;
-    }
-
-    else if (currentValue === 'Contagion'){
-        carouselImages = contagionImages;
-    }
-    else 
-        {currentValue === 'Just Mercy'
-        carouselImages = justmercyImages ;
-    }
-}
-
-let horrorUpdate = function (){
-    let currentValue = movieSelect.value;
-    if (currentValue === 'Antebellum'){
-        carouselImages = antebellumImages;
-    }
-
-    else if (currentValue === 'Dawn of the Dead'){
-        carouselImages = dawnofdeadImages;
-    }
-    else 
-        {currentValue === 'Rec'
-        carouselImages = recImages;
-    }
-} */
 
 window.addEventListener("load", function(){
    //triggered every 5 sec
@@ -150,7 +104,4 @@ window.addEventListener("load", function(){
 genreSelect.addEventListener("change", updateCategory);
 movieSelect.addEventListener("change", movieUpdate);
 
-/*movieSelect.addEventListener("change", comedyUpdate);
-movieSelect.addEventListener("change", dramaUpdate);
-movieSelect.addEventListener("change", horrorUpdate);*/
 
