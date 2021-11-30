@@ -18,7 +18,7 @@ let getNASAImage = function(){
         
         let img = document.createElement('img');
         img.src = data.url;
-        img.alt = 'NASA daily image is a Video :/';
+        img.alt = data.title;
         NASAImgDisp.appendChild(img);
         })
 }
