@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Element, Responsive CSS and Javascript Plugins</title>
+    
+    <link rel="stylesheet" href="assets/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+
+    </header>
+    <main>
+        <section class="flex-container">
+            <div class="d-none d-md-block w-md-50 w-lg-66" id="qHabitat">
+                <p class="bg-tr-cabbage d-inline-block p-1 txt-light txt-shadow font-family">A quokka's natural habitat</p>
+            </div>
+            <div class="w-md-50 w-lg-33">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/quokka-lg.jpg">
+                    <source media="(min-width: 768px)" srcset="images/quokka-md.jpg">
+                   <img src="images/quokka.jpg" alt="Cute quokka">
+                </picture>
+            </div>
+        </section>
+        <h1 class ="text-center"> Welcome to the world of Quokka's</h1>
+
+        <section class="flex-container gallery">
+            <a href="images/quokka_bag_lg_1.jpg" data-caption="Qute quokka 1" class="w-md-33 w-lg-25 p-1">
+                <img src="images/quokka_bag_thumb_1.jpg" alt="First image">
+            </a>
+            <a href="images/quokka_bag_lg_2.jpg" data-caption="Qute quokka 2" class="w-md-33 w-lg-25 p-1">
+                <img src="images/quokka_bag_thumb_2.jpg" alt="Second image">
+            </a>
+        </section>
+    </main>
+
+    <script src="assets/baguetteBox.min.js">
+
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+    </script>
+    
+</body>
+</html>
