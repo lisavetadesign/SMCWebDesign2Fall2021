@@ -1,4 +1,20 @@
+
 @import url('reset.css');
-@import url('colors.css');
+@import url('color.css');
 @import url('grid.css');
 @import url('type.css');
+@import url('image.css');
+@import url('nav.css');
+
+.none{
+    display: none;
+}
+
+@media (min-width:768px){
+.disp {
+    display: flex;
+}
+.none-md{
+    display: none;
+}
+}

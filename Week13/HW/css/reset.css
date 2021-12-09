@@ -1,6 +1,6 @@
 /* GENERIC RULES */
 html {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 body {
@@ -17,6 +17,5 @@ nav ul {
 }
 
 nav ul a {
-    color: black;
     text-decoration: none;
 }
