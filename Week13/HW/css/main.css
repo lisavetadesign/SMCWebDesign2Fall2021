@@ -6,12 +6,22 @@
 @import url('image.css');
 @import url('nav.css');
 
+.disp{
+    display: flex;
+}
 .none{
     display: none;
 }
 
+
+.button{
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+}
+
 @media (min-width:768px){
-.disp {
+.disp-md {
     display: flex;
 }
 .none-md{
