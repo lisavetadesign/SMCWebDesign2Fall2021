@@ -28,3 +28,12 @@
     display: none;
 }
 }
+
+@media (min-width:1024px){
+    .disp-lg {
+        display: grid;
+    }
+    .none-lg{
+        display: none;
+    }
+    }
