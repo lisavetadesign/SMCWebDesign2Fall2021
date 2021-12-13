@@ -1,0 +1,171 @@
+.center{
+    justify-self: center;
+    align-self: center;
+}
+
+.disp{
+    display: flex;
+}
+.none{
+    display: none;
+}
+
+.donatebutton{
+    margin:0 auto;
+    display:block;
+    text-align:center;
+    max-height: 65px;
+    max-width: 65px;
+}
+.contain{
+    position: relative;
+    width: 100%;
+}
+.contain .bttnoverimg{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    background-color: rgba(75, 70, 70, 0.849);
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.button{
+    margin:0 auto;
+    display:block;
+    text-align:center; 
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pad-left{
+    padding-left: 10px;
+}
+
+.pad-right{
+    padding-right: 10px;
+}
+.pad-none{
+    padding: 0px;
+}
+
+.mar-none{
+    margin-top: 0px;
+}
+
+.marquee{
+    max-width: 95vw;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+.marquee div{
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    animation: animate 80s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+}
+
+@keyframes animate{
+    100%{
+        transform: translate(-100%, 0);
+    }
+}
+
+@media (min-width:768px){
+.disp-md {
+    display: flex;
+}
+.none-md{
+    display: none;
+}
+.pad-none-md{
+    padding: 0;
+}
+
+.marquee div{
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    animation: animate 120s linear infinite;
+    padding-left: 100%;
+    display: inline-block;
+}
+
+.donatebutton{
+    margin:0 auto;
+    display:block;
+    text-align:center;
+    max-height: 95px;
+    max-width: 95px;
+}
+
+.contain .bttnoverimg{
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    background-color: rgba(75, 70, 70, 0.849);
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+}
+
+@media (min-width:1024px){
+    .disp-lg {
+        display: grid;
+    }
+    .none-lg{
+        display: none;
+    }
+    .pad-none-lg{
+        padding: 0;
+    }
+    .marquee{
+        max-width: 75vw;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    .marquee div{
+        font-size: 5rem;
+        font-family: 'Bebas Neue', cursive;
+        animation: animate 120s linear infinite;
+        padding-left: 100%;
+        display: inline-block;
+    }
+    .donatebutton{
+        margin:0 auto;
+        display:block;
+        text-align:center;
+        max-height: 125px;
+        max-width: 125px;
+    }
+    .contain .bttnoverimg{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        background-color: rgba(75, 70, 70, 0.849);
+        color: white;
+        font-size: 16px;
+        padding: 12px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+    }
+    }

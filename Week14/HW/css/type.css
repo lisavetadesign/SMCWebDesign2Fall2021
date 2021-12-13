@@ -1,0 +1,80 @@
+#p{
+    align-content: center;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: .7rem;
+}
+
+h1 {
+    font-size: 8.5vw;
+}
+h2{
+    font-size: 7vw;
+}
+
+.just{
+    text-align: justify;
+}
+
+.center-text{
+    text-align: center;
+}
+
+/* Typeface (option A)*/
+.h-font-a{
+    font-family: 'Bebas Neue', cursive;
+}
+.p-font-a{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Typeface (option B)*/
+.h-font-b{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.p-font-b{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typeface (option C)*/
+.h-font-c{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.p-font-c{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.1rem;
+    }
+    .just-right{
+        text-align: right;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 3.8vw;
+    }
+}
+
+@media (min-width: 1024px){
+    h1 {
+        font-size: 5.5rem;
+    }
+    p{
+        font-size: 2rem; 
+    }
+    h2{
+        font-size: 4vw;
+    }
+}
