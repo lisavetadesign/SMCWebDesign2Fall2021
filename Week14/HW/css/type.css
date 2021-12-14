@@ -22,6 +22,9 @@ h2{
 h3{
     font-size: 6vw;
 }
+h4{
+    font-size: 5.5vw;
+}
 h5{
     font-size: 5vw;
 }
@@ -45,6 +48,10 @@ h6{
 
 .center-text{
     text-align: center;
+}
+
+.left-text{
+    text-align: left;
 }
 
 .colums{

@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/main.css">
 
@@ -21,9 +21,23 @@
 
 <body>
     <header>
-        <nav class="navbar canary-bg">
-
-        </nav>
+        <div class="nav-container">
+            <nav class="navbar canary-bg">
+                <a href="index.html"><img src="images/angel-city-pit-bulls-logo-01.png"
+                        alt="Angel City Pit Bulls nav logo" id="navbarLogo"></a>
+                <div class="menu-toggle" id="mobileMenu">
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="adoptPitbull.html" class="nav-links">Adopt a pet</a></li>
+                    <li><a href="resources.html" class="nav-links">Resources</a></li>
+                    <li><a href="about.html" class="nav-links">Get to know us</a></li>
+                    <li><a href="donate.html" class="nav-links">Contribute</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="container container-md container-lg">
@@ -34,22 +48,43 @@
                     <img src="images/AboutUsHero.jpg" alt="About Us Hero Image">
                 </picture>
             </div>
+            <div class="span-screen span-screen-md center-screen-50-lg">
+                <h2>Get to know us</h2>
+                <br>
+                <p class="small-p small-p-md small-p-lg ">
+                    Angel City Pit Bulls is a 501c3 non-profit organization dedicated to creating a better future for
+                    pit bulls through education, public advocacy, adoptions, and owner support.
+                    <br>
+                    Angel City Pit Bulls was founded in 2010 to address the problem of overpopulation and high
+                    euthanasia rate of pit bull terrier type dogs in Los Angeles shelters. ACPB continues to evolve
+                    through the efforts of dedicated pit bull owners, educators, rescuers, and supporters working
+                    together to respond to the challenges facing pit bulls in our community.
+                    <br>
+                    As a member of the NKLA Coalition, it is our priority to be an integral part of making Los Angeles
+                    no-kill. We believe that Los Angeles City can be a community where no healthy or treatable pet dies
+                    for lack of space in the shelter. As we work to achieve this, our efforts center around reducing the
+                    number of pit bull terrier type dogs in LA City animal shelters by increasing adoptions, providing
+                    community education and support to increase owner retention, and offering targeted spay/neuter
+                    programs.
+                </p>
+            </div>
             <div class="span-screen span-screen-md span-screen-lg center-text">
-                <h1>We'd love to hear from you!</h1>
+                <h2>We'd love to hear from you!</h2>
             </div>
             <div class="half-screen-left half-screen-left-50-md sixth-screen-left-60-lg">
-                <iframe class="map map-md map-lg center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8281725105235!2d-118.3315883847857!3d34.022621280614054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b94dec6e8e05%3A0x541c80a0a526d1cb!2sAngel%20City%20Pit%20Bulls!5e0!3m2!1sen!2sus!4v1639457942695!5m2!1sen!2sus"  allowfullscreen="" loading="lazy"></iframe>
+                <iframe class="map map-md map-lg center"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.8281725105235!2d-118.3315883847857!3d34.022621280614054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b94dec6e8e05%3A0x541c80a0a526d1cb!2sAngel%20City%20Pit%20Bulls!5e0!3m2!1sen!2sus!4v1639457942695!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="half-screen-right half-screen-right-50-md fourth-screen-right-40-lg">
                 <h5>We are located at</h5>
                 <p class="small-p-md">
-                   3612 11th Ave, 
-                   <br>
-                   Los Angeles, CA 90018 
-               </p>
-               <br>
-                <h5>Contact Us</h5>
+                    3612 11th Ave,
+                    <br>
+                    Los Angeles, CA 90018
+                </p>
                 <br>
+                <h5>Contact Us</h5>
                 <p class="small-p-md">
                     <b>Adoption Contact:</b>
                     <br>
@@ -163,7 +198,7 @@
                     <br>
                     <b>Jenny Mosbaugh</b>
                     <br>
-                    Volunteer Coordinator, <br>  Social Media
+                    Volunteer Coordinator, <br> Social Media
                     <br>
                     <b>Amanda Carrozza</b>
                     <br>
@@ -218,6 +253,11 @@
             </div>
         </section>
 
+        <script src="script/menuscript.js">
+
+        </script>
+
 </body>
+
 
 </html>

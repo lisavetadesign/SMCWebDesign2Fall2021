@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,63 +13,174 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
+        <div class="nav-container">
             <nav class="navbar canary-bg">
-
+                <a href="index.html"><img src="images/angel-city-pit-bulls-logo-01.png"
+                        alt="Angel City Pit Bulls nav logo" id="navbarLogo"></a>
+                <div class="menu-toggle" id="mobileMenu">
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="adoptPitbull.html" class="nav-links">Adopt a pet</a></li>
+                    <li><a href="resources.html" class="nav-links">Resources</a></li>
+                    <li><a href="about.html" class="nav-links">Get to know us</a></li>
+                    <li><a href="donate.html" class="nav-links">Contribute</a></li>
+                </ul>
             </nav>
+        </div>
     </header>
     <main>
         <section class="container container-md container-lg">
-            <div class="span-screen blue-pantone-bg">
-                Image
-                <picture></picture>
+            <div class="span-screen span-screen-md span-screen-lg">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="images/ACPBDonate.jpg">
+                    <source media="(min-width: 768px)" srcset="images/ACPBDonate.jpg">
+                    <img src="images/ACPBDonate.jpg" alt="About Us Hero Image">
+                </picture>
             </div>
-            <div class="span-screen cerulean-bg">
-                <h1>Every little bit helps</h1>
+            <div class="span-screen half-screen-left-50-md half-screen-left-50-lg one-row-md one-row-lg center">
+                <p class="left-text pad-p medium-p-md">
+                    Angel City Pit Bulls operates entirely on charitable contributions. We are an all volunteer
+                    organization so your donation goes directly to the care of the dogs in our program, funding our
+                    educational programs, and furthering our mission. The majority of the pit bulls we take in have some
+                    level of veterinary needs as well as overall malnutrition, your contributions help an Animal at
+                    Angel City Pit Bulls.
+                    <br>
+                    Angel City Pit Bulls takes in dogs (mainly from our local shelters) that fall under the generic term
+                    pit bull who demonstrate people-soft, responsive qualities and solid temperaments. Their
+                    adorableness and gushy love of people make them fantastic family dogs. We have a wide range of
+                    energy levels, so whether you are looking for a running partner or a potential “therapy dog”, we
+                    will typically have a dog that will fit the bill.
+                </p>
             </div>
-            <div class="half-screen-center canary-bg">
-                <p> This is a paragraph. Your contributions help an Animal at Angel City Pit Bulls</p>
+            <div class="span-screen half-screen-right-50-md half-screen-right-50-lg">
+                <form action="" method="post" id="donateForm" class="pad-left">
+                    <h5 class="pad-left">How much would you like to donate?</h5>
+                    <br>
+                    <div class="buttonDonate">
+                        $10
+                    </div>
+                    <div class="buttonDonate buttonDonateHighlight ">
+                        $25
+                    </div>
+                    <div class="buttonDonate">
+                        $100
+                    </div>
+                    <div class="center buttonDonate">
+                        Other
+                    </div>
+                    <br>
+                    <h5 class="pad-left">How often would you like to donate?</h5>
+                    <div class="buttonDonate buttonDonateHighlight">
+                        Make it Montly
+                    </div>
+                    <div class="buttonDonate">
+                        One time donation
+                    </div>
+                    <br>
+                    <label class="lstyle" for="email"> </label>
+                    <input type="text" name="email" id="email" placeholder="email address">
+
+                    <label class="lstyle" for="firstName"> </label>
+                    <input type="text" name="first name" id="firstName" placeholder="first name">
+
+                    <label class="lstyle" for="lastName"> </label>
+                    <input type="text" name="last name" id="lastName" placeholder="last name">
+
+                    <label class="lstyle" for="address"> </label>
+                    <input type="text" name="address" id="address" placeholder="address">
+
+                    <label class="lstyle" for="zipcode"> </label>
+                    <input type="text" name="last name" id="zipcode" placeholder="zip code">
+
+                    <label class="lstyle" for="city"> </label>
+                    <input type="text" name="last name" id="city" placeholder="city">
+
+                    <br>
+
+                    <label class="lstyle" for="state"></label>
+                    <select id="state" name="state">
+                        <option value="california">CA</option>
+                        <option value="new york">NY</option>
+                        <option value="oregon">OR</option>
+                        <option value="washington">WA</option>
+                        <option value="nevada">NV</option>
+                    </select>
+
+                    <label class="lstyle" for="lastName"></label>
+                    <select id="country" name="country">
+                        <option value="united states">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+                    <br>
+                    <label class="lstyle" for="ccard" autocomplete="off"> </label>
+                    <input type="text" name="credit card" id="ccard" placeholder="0000 0000 0000 0000">
+                    <label class="lstyle" for="cvv" autocomplete="off"> </label>
+                    <input type="text" name="cvv" id="cvv" placeholder="cvv">
+                    <label class="lstyle" for="exdate" autocomplete="off"> </label>
+                    <input type="text" name="exdate" id="cvv" placeholder="MM/YYYY">
+                    <br>
+                    <input type="submit" value="contribute">
+                </form>
+                <div class="none center-text" id="contMsg">
+                    <h2>Thank you for your generous contribution! </h2>
+                    <img src="images/ACPBThankYou.jpg">
+                </div>
             </div>
-            <div class="span-screen mint-cream-bg">
-                Donation form goes here
+            <div class="span-screen span-screen-md span-screen-lg center-text">
+                <h1>other ways to help</h1>
             </div>
-            <div class="span-screen canary-bg">
-                Other ways to help
-            </div>
-            <div class="half-screen-left cerulean-bg">
-                image
-                <picture></picture>
+            <div class="half-screen-left half-screen-left-50-md half-screen-left-50-lg">
+                <picture>
+                    <img src="images/AmazonWishListlogo.jpg" alt="Amazon Wish List">
+                </picture>
                 <a href="#" class="button">Amazon Wishlist</a>
             </div>
-            <div class="half-screen-right cerulean-bg">
-                image
-                <picture></picture>
+            <div class="half-screen-right half-screen-right-50-md half-screen-right-50-lg">
+                <picture>
+                    <img src="images/ChewyWishListlogo.jpg" alt="Chewy Wishlist">
+                </picture>
                 <a href="#" class="button">Chewy Wishlist</a>
             </div>
-            <div class="span-screen cerulean-bg">
-                image
+            <div class="span-screen span-screen-md center-screen-50-lg">
+                <picture>
+                    <img src="images/BonfirexACPBlogo-01.jpg" alt="bonfire x Angel city pit bulls merch">
+                </picture>
+                <br>
                 <a href="#" class="button">Shop our Merch</a>
             </div>
-            <div class="half-screen-center span-screen-md center-screen-50-lg span-screen-lg">
-                Events this month
+            <div class="half-screen-center span-screen-md center-screen-50-lg span-screen-lg center-text">
+                <h2>Events this month</h2>
             </div>
-            <div class="half-screen-left third-screen-left-33-md two-col-event-left-lg mint-cream-bg height-test">
-                events poster
+            <div class="half-screen-left third-screen-left-33-md two-col-event-left-lg mint-cream-bg">
+                <picture>
+                    <img src="images/poster.jpg" alt="Event Poster">
+                </picture>
             </div>
-            <div class="half-screen-right third-screen-center-33-md two-col-event-center-left-lg mint-cream-bg height-test">
-                events poster
+            <div class="half-screen-right third-screen-center-33-md two-col-event-center-left-lg mint-cream-bg">
+                <picture>
+                    <img src="images/poster.jpg" alt="Event Poster">
+                </picture>
             </div>
-            <div class="half-screen-left third-screen-right-33-md two-col-event-center-right-lg mint-cream-bg height-test">
-                events poster
+            <div class="half-screen-left third-screen-right-33-md two-col-event-center-right-lg mint-cream-bg">
+                <picture>
+                    <img src="images/poster.jpg" alt="Event Poster">
+                </picture>
             </div>
-            <div class="half-screen-right mint-cream-bg none-md disp-lg two-col-event-right-lg height-test">
-                events poster
+            <div class="half-screen-right mint-cream-bg none-md disp-lg two-col-event-right-lg">
+                <picture>
+                    <img src="images/poster.jpg" alt="Event Poster">
+                </picture>
             </div>
         </section>
     </main>
@@ -81,8 +193,24 @@
 
     </footer>
     <script>
+        let myForm = document.getElementById('donateForm');
+        let thanks = document.getElementById('contMsg');
+
+
+        myForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            myForm.classList.add('none');
+
+            thanks.classList.remove('none');
+            thanks.classList.add('show');
+        })
+    </script>
+
+    <script src="script/menuscript.js">
 
     </script>
-    
+
 </body>
+
 </html>
