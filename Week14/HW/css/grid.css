@@ -9,10 +9,6 @@
     justify-self: center;
 }
 
-.height-test{
-    height: 108px;
-}
-
 .span-screen {
     grid-column: 1/span 4;
 }
@@ -39,6 +35,9 @@
     grid-column: 4/span 1;
 }
 
+.three-row{
+    grid-row: auto/span 3;
+}
 .two-row{
     grid-row: auto/span 2;
 }
@@ -98,6 +97,12 @@
 
     .one-row-md{
         grid-row: auto/span 1;
+    }
+    .speci-two-row-md{
+        grid-row: 3/ span 2;
+    }
+    .two-row-md{
+        grid-row: auto/span 2;
     }
     .four-row-md{
         grid-row: 3/span 4;
