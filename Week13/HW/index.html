@@ -20,15 +20,17 @@
 
 <body>
     <header>
+        <div class="nav-container">
             <nav class="navbar canary-bg">
-                <img src="images/angel-city-pit-bulls-logo-01.png" alt="ACPB Nav logo" id="navbarLogo"
-                    class="nav-logo none-md">
-                <div class="menubttn none-md" id="p">
-                    <img src="images/menux-01.png" id="menubutton" alt="menu_open">
+                <img src="images/angel-city-pit-bulls-logo-01.png" alt="Angel City Pit Bulls nav logo" id="navbarLogo">
+                <div class="menu-toggle" id="mobileMenu">
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
+                    <span class="bar"> </span>
                 </div>
-                <ul class="nav-menu nav-menu-md flex-contained" id="navigation">
-                    <li><a href="#" class="nav-links">Adopt your pet</a></li>
-                    <li><a href="#" class="nav-links">Participate</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-links">Adopt a pet</a></li>
+                    <li><a href="#" class="nav-links">Resources</a></li>
                     <li><a href="#" class="nav-links none disp-md nav-logo-md"><img
                                 src="images/angel-city-pit-bulls-logo-01.png" alt="ACPB Nav logo" id="navbarLogo"></a>
                     </li>
@@ -40,6 +42,7 @@
     <main>
         <section class="container container-md container-lg">
             <div class="span-screen span-screen-md span-screen-lg mint-cream-bg">
+                <picture></picture>
                 <button class=""> contribute </button>
             </div>
             <div class="span-screen third-screen-left-33-md span-screen-lg">
@@ -72,10 +75,12 @@
             <div class="half-screen-left third-screen-left-33-md two-col-event-left-lg mint-cream-bg height-test">
                 events poster
             </div>
-            <div class="half-screen-right third-screen-center-33-md two-col-event-center-left-lg mint-cream-bg height-test">
+            <div
+                class="half-screen-right third-screen-center-33-md two-col-event-center-left-lg mint-cream-bg height-test">
                 events poster
             </div>
-            <div class="half-screen-left third-screen-right-33-md two-col-event-center-right-lg mint-cream-bg height-test">
+            <div
+                class="half-screen-left third-screen-right-33-md two-col-event-center-right-lg mint-cream-bg height-test">
                 events poster
             </div>
             <div class="half-screen-right mint-cream-bg none-md disp-lg two-col-event-right-lg height-test">
@@ -98,6 +103,13 @@
 
     </sript>
     <script src="script/menuscript.js">
+        let menu = document.querySelector('#mobileMenu');
+        let menuLinks = document.querySelector('.nav-menu');
+
+        menu.addEventListener("click", function () {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        })
 
     </script>
 
