@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Angel City Pit Bulls</title>
 
+    <link rel="stylesheet" href="assets/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -127,26 +130,17 @@
             <div class="span-screen span-screen-md span-screen-lg center-text">
                 <h2>This Months Events</h2>
             </div>
-            <div class="half-screen-left third-screen-left-33-md two-col-event-left-lg">
-                <picture>
-                    <img src="images/ACPBEvent.jpeg" alt="Event Poster">
-                </picture>
+            <div class="span-screen span-screen-md span-screen-lg gallery disp-grid">
             </div>
-            <div class="half-screen-right third-screen-center-33-md two-col-event-center-left-lg">
-                <picture>
-                    <img src="images/ACPBEvent.jpeg" alt="Event Poster">
-                </picture>
-            </div>
-            <div class="half-screen-left third-screen-right-33-md two-col-event-center-right-lg">
-                <picture>
-                    <img src="images/ACPBEvent.jpeg" alt="Event Poster">
-                </picture>
-            </div>
-            <div class="half-screen-right mint-cream-bg none-md disp-lg two-col-event-right-lg">
-                <picture>
-                    <img src="images/ACPBEvent.jpeg" alt="Event Poster">
-                </picture>
-            </div>
+            
+            <section class="fourth-screen-center-left gallery">
+                <a href="images/ACPBEvent.jpeg" data-caption="Angel City Pit Bulls Event" class="fourth-screen-center-left">
+                    <img src="images/ACPBEvent.jpeg" alt="Angel City Pit Bulls Event">
+                </a>
+                <a href="images/ACPBEvent.jpeg" data-caption="Angel City Pit Bulls Event" class="fourth-screen-center-right">
+                    <img src="images/ACPBEvent.jpeg" alt="Angel City Pit Bulls Event">
+                </a>
+            </section>
             <div class="span-screen span-screen-md span-screen-lg center-text">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
@@ -163,6 +157,15 @@
         </section>
 
     </footer>
+    <script src="assets/baguetteBox.min.js">
+
+    </script>
+    <script>
+        window.addEventListener('load', function() {
+          baguetteBox.run('.gallery');
+        });
+    </script>
+
     <script src="script/menuscript.js">
 
     </script>

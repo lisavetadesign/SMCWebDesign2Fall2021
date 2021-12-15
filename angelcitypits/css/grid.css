@@ -8,7 +8,9 @@
 .center{
     justify-self: center;
 }
-
+.disp-grid{
+    display: grid;
+}
 .span-screen {
     grid-column: 1/span 4;
 }
