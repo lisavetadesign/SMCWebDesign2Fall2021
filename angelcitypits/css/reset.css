@@ -1,0 +1,21 @@
+/* GENERIC RULES */
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+nav ul a {
+    text-decoration: none;
+}
