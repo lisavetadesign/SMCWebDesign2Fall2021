@@ -4,10 +4,13 @@
     grid-template-rows: auto;
     gap: 12px;
 }
-
+.lar-p{
+    font-size: 3rem;
+}
 .center{
     justify-self: center;
 }
+
 .disp-grid{
     display: grid;
 }
@@ -138,6 +141,9 @@
         gap: 20px;
         max-width: 1280px;
         margin: auto;
+    }
+    .lar-p-md{
+        font-size: 5vw;
     }
 
     .span-screen-lg {
