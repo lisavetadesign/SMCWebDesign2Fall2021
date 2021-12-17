@@ -1,0 +1,132 @@
+#p{
+    align-content: center;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Zilla Slab Highlight', cursive;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: .8rem;
+}
+
+h1 {
+    font-size: 8.5vw;
+}
+h2{
+    font-size: 7vw;
+}
+h3{
+    font-size: 6vw;
+}
+h4{
+    font-size: 5.5vw;
+}
+h5{
+    font-size: 5vw;
+}
+h6{
+    font-size: 5vw;
+}
+.small-p{
+    font-size: .55rem;
+}
+.pad-p{
+    padding: 10px;
+}
+
+.pad-left{
+    padding-left: 10px;
+}
+
+.just{
+    text-align: justify;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.left-text{
+    text-align: left;
+}
+
+.colums{
+    column-count: 4;
+    column-gap: 10px;
+}
+
+/* Typeface (option A)*/
+.h-font-a{
+    font-family: 'Zilla Slab Highlight', cursive;
+}
+.p-font-a{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.1rem;
+    }
+    .just-right{
+        text-align: right;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 3.8vw;
+    }
+    h3{
+        font-size: 3.5vw;
+    }
+    h5{
+        font-size: 2rem;
+    }
+    h6{
+        font-size:1.5rem;
+    }
+    .md-p-pad{
+        font-size: 1rem;
+        padding-left: 10px; 
+    }
+    .medium-p-md{
+        font-size: 1.3rem;
+    }
+    .small-p-md{
+        font-size: .8rem;
+    }
+    .colums-md{
+        column-count: 4;
+        column-gap: 10px;
+    }
+}
+
+@media (min-width: 1024px){
+    .right-text-lg{
+        text-align: right;
+    }
+    h1 {
+        font-size: 5.5rem;
+    }
+    p{
+        font-size: 2rem; 
+    }
+    h2{
+        font-size: 4vw;
+    }
+    h3{
+        font-size: 3vw;
+    }
+    h5{
+        font-size: 2vw;
+    }
+    .small-p-lg{
+        font-size: .95rem;
+    }
+}

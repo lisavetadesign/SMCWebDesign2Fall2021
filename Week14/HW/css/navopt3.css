@@ -2,7 +2,6 @@
         margin: auto;
         position: relative;
     }
-
   
     .nav-menu{
         display: grid;
@@ -26,8 +25,8 @@
         text-align: center;
         line-height: 60px;
         width: 100%;
-        font-family:'Poppins', sans-serif;
-        color: rgb(15, 30, 150);
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: rgb(220, 220, 220);
         display: table;
     }
 
@@ -35,7 +34,7 @@
         display: block;
         width: 40px;
         height: 5px;
-        color:rgb(4, 26, 4);
+        color:rgb(220, 220, 220);
     }
 
     .menu-toggle:hover{
@@ -85,19 +84,19 @@ ul{
     }
     
     .nav-links{
-        color: rgb(4, 26, 4);
+        color: rgb(24, 40, 37);
         text-decoration: none;
         font-size: 14pt;
-        font-family:'Poppins', sans-serif;
-        color:rgb(15, 30, 150);
-        background-color: rgb(255, 247, 133);
+        font-family: 'Montserrat Alternates', sans-serif;
+        color:rgb(220, 220, 220);
+        background-color: rgb(24, 40, 37);
     }
     .menu-toggle .bar{
         height: 3px;
         width: 30px;
         margin: 8px auto;
         border-radius: 8px;
-        background-color: rgb(4, 26, 4);
+        background-color: rgb(220, 220, 220);
     }
     
     .grid-container{
@@ -125,12 +124,12 @@ ul{
     .nav-menu{
         display: none;
         grid-template-columns: auto;
-        background-color:rgb(255, 247, 133);
+        background-color:rgb(24, 40, 37);
         margin: 0;
         position: absolute;
         width: 100%;
         top: 100px;
-        font-family:'Poppins', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
     }
 
     .nav-menu.active{
@@ -141,17 +140,17 @@ ul{
         text-align: left;
         width: 100%;
         display: table;
-        font-family:'Poppins', sans-serif;
+        font-family: 'Montserrat Alternates', sans-serif;
         font-size: 32px;
         line-height: 15vh;
-        color:rgb(15, 30, 150);
+        color:rgb(220, 220, 220);
     }
 
     .menu-toggle .bar{
         display: block;
         width: 40px;
         height: 5px;
-        color:rgb(4, 26, 4);
+        color:rgb(220, 220, 220);
     }
 
     .menu-toggle:hover{
